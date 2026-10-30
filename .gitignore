@@ -26,6 +26,7 @@ Profile.pdf
 *Resume*
 *.doc
 *.docx
+IMG_8135.JPG
 
 # Taste skill working cache & logs
 .taste-skill/
@@ -38,3 +39,4 @@ yarn-error.log*
 .DS_Store
 *.pem
 Thumbs.db
+

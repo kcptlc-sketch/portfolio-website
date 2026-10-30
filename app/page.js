@@ -119,9 +119,9 @@ export default function Home() {
       {/* Top Header / Navigation */}
       <header className="sticky top-0 z-50 bg-[#0c0a08]/90 backdrop-blur-md border-b border-[#2c2620]">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#" className="text-xl font-bold tracking-tight text-white flex items-center gap-2">
-            <span className="w-8 h-8 rounded-full bg-[#181512] border border-[#c9a45a]/50 text-[#c9a45a] flex items-center justify-center font-bold text-xs">
-              KC
+          <a href="#" className="text-xl font-bold tracking-tight text-white flex items-center gap-3">
+            <span className="w-9 h-9 rounded-full overflow-hidden border border-[#c9a45a]/60 flex items-center justify-center flex-shrink-0 bg-[#181512]">
+              <img src="/profile.jpg" alt="KC Ken Pierson" className="w-full h-full object-cover object-top" />
             </span>
             <span>KC Ken Pierson</span>
           </a>
@@ -142,45 +142,71 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 border-b border-[#2c2620] overflow-hidden">
+      <section className="relative pt-16 pb-20 md:pt-24 md:pb-28 border-b border-[#2c2620] overflow-hidden">
         {/* Subtle background glow */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#c9a45a]/5 blur-[120px] pointer-events-none rounded-full" />
 
         <div className="max-w-6xl mx-auto px-6 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#181512] border border-[#2c2620] text-xs font-semibold text-[#c9a45a] mb-8">
-            <MapPin className="w-3.5 h-3.5" />
-            <span>Santa Clarita, California</span>
-          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            {/* Hero Text */}
+            <div className="lg:col-span-7">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#181512] border border-[#2c2620] text-xs font-semibold text-[#c9a45a] mb-8">
+                <MapPin className="w-3.5 h-3.5" />
+                <span>Santa Clarita, California</span>
+              </div>
 
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.08] text-white max-w-4xl mb-6">
-            KC Ken Pierson
-          </h1>
+              <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.08] text-white max-w-4xl mb-6">
+                KC Ken Pierson
+              </h1>
 
-          <p className="text-xl sm:text-2xl font-medium text-[#c9a45a] max-w-3xl mb-4">
-            Founder – Thought-Life Connection &bull; Recovery Educator &bull; Speaker
-          </p>
+              <p className="text-xl sm:text-2xl font-medium text-[#c9a45a] max-w-3xl mb-4">
+                Founder – Thought-Life Connection &bull; Recovery Educator &bull; Speaker
+              </p>
 
-          <p className="text-base sm:text-lg text-[#a39e97] max-w-2xl leading-relaxed mb-10">
-            Dedicated for more than two decades to helping individuals overcome addiction, destructive thinking patterns, and self-limiting behaviors through cognitive awareness and personal transformation.
-          </p>
+              <p className="text-base sm:text-lg text-[#a39e97] max-w-2xl leading-relaxed mb-10">
+                Dedicated for more than two decades to helping individuals overcome addiction, destructive thinking patterns, and self-limiting behaviors through cognitive awareness and personal transformation.
+              </p>
 
-          <div className="flex flex-wrap items-center gap-4">
-            <a 
-              href="https://thoughtlifeconnection.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#c9a45a] text-[#0c0a08] font-bold text-sm tracking-wide hover:bg-[#dfb96c] transition-all shadow-lg shadow-[#c9a45a]/10"
-            >
-              <span>Visit ThoughtLifeConnection.com</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </a>
+              <div className="flex flex-wrap items-center gap-4">
+                <a 
+                  href="https://thoughtlifeconnection.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#c9a45a] text-[#0c0a08] font-bold text-sm tracking-wide hover:bg-[#dfb96c] transition-all shadow-lg shadow-[#c9a45a]/10"
+                >
+                  <span>Visit ThoughtLifeConnection.com</span>
+                  <ArrowUpRight className="w-4 h-4" />
+                </a>
 
-            <a 
-              href="#contact" 
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#181512] border border-[#2c2620] text-white font-medium text-sm hover:border-[#c9a45a]/50 hover:bg-[#201c18] transition-all"
-            >
-              <span>Connect with Me</span>
-            </a>
+                <a 
+                  href="#contact" 
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#181512] border border-[#2c2620] text-white font-medium text-sm hover:border-[#c9a45a]/50 hover:bg-[#201c18] transition-all"
+                >
+                  <span>Connect with Me</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Hero Image */}
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative group">
+                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#c9a45a]/20 to-[#c9a45a]/0 blur-md group-hover:from-[#c9a45a]/30 transition-all duration-500" />
+                <div className="relative w-64 sm:w-72 md:w-80 aspect-[3/4] rounded-2xl overflow-hidden border-2 border-[#2c2620] bg-[#181512] shadow-2xl">
+                  <img 
+                    src="/profile.jpg" 
+                    alt="KC Ken Pierson" 
+                    className="w-full h-full object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0c0a08]/70 via-transparent to-transparent pointer-events-none" />
+                </div>
+                <div className="absolute -bottom-4 -left-3 sm:-left-4 bg-[#181512] border border-[#2c2620] px-4 py-2.5 rounded-xl shadow-xl flex items-center gap-2.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="text-xs font-semibold text-white tracking-wide">Thought-Life Connection</span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -206,9 +232,14 @@ export default function Home() {
               <blockquote className="font-serif italic text-lg sm:text-xl text-[#ffffff] leading-relaxed mb-6">
                 “Meaningful recovery begins with awareness of one’s inner life and the courage to confront destructive beliefs and behaviors. Through education, community, and compassionate guidance, individuals can rebuild integrity, rediscover purpose, and create lasting change.”
               </blockquote>
-              <div className="border-t border-[#2c2620] pt-4">
-                <p className="text-sm font-bold text-white">KC Ken Pierson</p>
-                <p className="text-xs text-[#a39e97]">Founder of Thought-Life Connection</p>
+              <div className="border-t border-[#2c2620] pt-4 flex items-center gap-3">
+                <div className="w-11 h-11 rounded-full overflow-hidden border border-[#c9a45a]/60 flex-shrink-0 bg-[#201c18]">
+                  <img src="/profile.jpg" alt="KC Ken Pierson" className="w-full h-full object-cover object-top" />
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-white">KC Ken Pierson</p>
+                  <p className="text-xs text-[#a39e97]">Founder of Thought-Life Connection</p>
+                </div>
               </div>
             </div>
 
