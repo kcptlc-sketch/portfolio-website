@@ -3,6 +3,25 @@ import './globals.css'
 export const metadata = {
   title: 'KC Ken Pierson | Recovery Educator, Speaker & Founder',
   description: 'Founder of Thought-Life Connection. Addiction recovery, cognitive awareness, and personal transformation through education, community, and compassionate guidance.',
+  openGraph: {
+    title: 'KC Ken Pierson | Recovery Educator, Speaker & Founder',
+    description: 'Founder of Thought-Life Connection. Addiction recovery, cognitive awareness, and personal transformation.',
+    url: 'https://kcptlc-sketch.github.io/portfolio-website/',
+    siteName: 'KC Ken Pierson Portfolio',
+    images: [
+      {
+        url: 'https://kcptlc-sketch.github.io/portfolio-website/profile.jpg',
+        width: 800,
+        height: 1000,
+        alt: 'KC Ken Pierson',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  icons: {
+    icon: '/portfolio-website/profile.jpg',
+  },
 }
 
 export default function RootLayout({ children }) {

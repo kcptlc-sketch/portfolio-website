@@ -1,5 +1,7 @@
 # KC Ken Pierson — Personal Portfolio Website
 
+🌐 **Live Website:** [https://kcptlc-sketch.github.io/portfolio-website/](https://kcptlc-sketch.github.io/portfolio-website/)
+
 Welcome to the personal portfolio website of **KC Ken Pierson**, Founder of **Thought-Life Connection**, Recovery Educator, and Speaker based in Santa Clarita, California.
 
 ## About This Project
