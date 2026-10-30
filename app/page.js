@@ -16,6 +16,8 @@ import {
 } from 'lucide-react'
 
 export default function Home() {
+  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio-website' : ''
+
   const experiences = [
     {
       role: 'Chief Executive Officer & Founder',
@@ -121,7 +123,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#" className="text-xl font-bold tracking-tight text-white flex items-center gap-3">
             <span className="w-9 h-9 rounded-full overflow-hidden border border-[#c9a45a]/60 flex items-center justify-center flex-shrink-0 bg-[#181512]">
-              <img src="/profile.jpg" alt="KC Ken Pierson" className="w-full h-full object-cover object-top" />
+              <img src={`${basePath}/profile.jpg`} alt="KC Ken Pierson" className="w-full h-full object-cover object-top" />
             </span>
             <span>KC Ken Pierson</span>
           </a>
@@ -194,7 +196,7 @@ export default function Home() {
                 <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#c9a45a]/20 to-[#c9a45a]/0 blur-md group-hover:from-[#c9a45a]/30 transition-all duration-500" />
                 <div className="relative w-64 sm:w-72 md:w-80 aspect-[3/4] rounded-2xl overflow-hidden border-2 border-[#2c2620] bg-[#181512] shadow-2xl">
                   <img 
-                    src="/profile.jpg" 
+                    src={`${basePath}/profile.jpg`} 
                     alt="KC Ken Pierson" 
                     className="w-full h-full object-cover object-top"
                   />
@@ -234,7 +236,7 @@ export default function Home() {
               </blockquote>
               <div className="border-t border-[#2c2620] pt-4 flex items-center gap-3">
                 <div className="w-11 h-11 rounded-full overflow-hidden border border-[#c9a45a]/60 flex-shrink-0 bg-[#201c18]">
-                  <img src="/profile.jpg" alt="KC Ken Pierson" className="w-full h-full object-cover object-top" />
+                  <img src={`${basePath}/profile.jpg`} alt="KC Ken Pierson" className="w-full h-full object-cover object-top" />
                 </div>
                 <div>
                   <p className="text-sm font-bold text-white">KC Ken Pierson</p>
