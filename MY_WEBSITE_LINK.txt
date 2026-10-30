@@ -1,0 +1,18 @@
+====================================================
+KC Ken Pierson — Personal Portfolio Website
+====================================================
+
+YOUR LIVE WEBSITE LINK:
+https://kcptlc-sketch.github.io/portfolio-website/
+
+GITHUB REPOSITORY:
+https://github.com/kcptlc-sketch/portfolio-website
+
+----------------------------------------------------
+HOW TO SHARE YOUR LINK:
+1. Highlight and copy: https://kcptlc-sketch.github.io/portfolio-website/
+2. Paste it (Command + V on Mac) into:
+   - A text message (iMessage / SMS)
+   - An email
+   - Your LinkedIn profile (under Contact Info or Website)
+====================================================
